@@ -997,6 +997,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "NewTalents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/NewTalents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewTalents.dll": {}
+        }
       }
     }
   },
@@ -3590,11 +3600,17 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "NewTalents/1.0.0": {
+      "type": "project",
+      "path": "../NewTalents/NewTalents.csproj",
+      "msbuildProject": "../NewTalents/NewTalents.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "NewTalents >= 1.0.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -3626,7 +3642,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\git\\DIO\\NewTalents\\NewTalents\\NewTalents.csproj": {
+              "projectPath": "C:\\git\\DIO\\NewTalents\\NewTalents\\NewTalents.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
